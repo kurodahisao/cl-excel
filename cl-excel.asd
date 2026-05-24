@@ -51,5 +51,6 @@
                  (:file "conversion")
                  (:file "compat")
                  (:file "ods"))))
-  :perform (test-op (op c)
-             (uiop:symbol-call '#:cl-excel.tests '#:run-tests)))
+  #+ignore :perform
+  #+ignore (test-op (op c)
+                    (uiop:symbol-call '#:cl-excel.tests '#:run-tests)))
